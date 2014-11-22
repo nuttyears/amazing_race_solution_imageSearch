@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Racer</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="amazing_race.js"></script>
+
+	</head>
+	<body>
+    <h1></h1>
+    <div class='setup-screen'>
+      <form>
+
+        <h2> Player 1 </h2>
+
+        <input type='text' placeholder="Enter player 1's name" class='player-1-name-input' autofocus>
+
+         <input type='text' class="player-1-search-input" placeholder="Search to select your avatar">
+        <a href="javascript:void(0)" class="player-1-search-button">Search</a>
+
+        <div class='clearfix'>
+
+          <label>
+            <img src="http://www.dog-health-guide.org/images/dog-diapers.jpg">
+            <input type="radio" name="player1Avatar" class="player-1-avatar" value="http://www.dog-health-guide.org/images/dog-diapers.jpg"/>
+          </label>
+
+          <label>
+            <img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=8501033">
+            <input type='radio' name='player1Avatar' class="player-1-avatar" value="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=8501033"/>
+          </label>
+
+          <label>
+            <img src="http://www.dog-clothes-world.com/images/dog-clothes/dog-toy.jpg">
+            <input type="radio" name="player1Avatar" class="player-1-avatar" value="http://www.dog-clothes-world.com/images/dog-clothes/dog-toy.jpg"/>
+          </label>
+
+        </div>
+
+        <h2> Player 2 </h2>
+
+        <input type='text' placeholder="Enter player 2's name" class='player-2-name-input'>
+
+
+        <div class='clearfix'>
+        
+          <label>
+            <img src="http://www.rhlaw.com/blog/wp-content/uploads/2011/10/kitten-300x300.jpg">
+            <input type="radio" name="player2Avatar" class="player-2-avatar" value="http://www.rhlaw.com/blog/wp-content/uploads/2011/10/kitten-300x300.jpg"/>
+          </label>
+
+          <label>
+            <img src="http://ecx.images-amazon.com/images/I/41C6l9omnvL._SY300_.jpg">
+            <input type='radio' name='player2Avatar' class="player-2-avatar" value="http://ecx.images-amazon.com/images/I/41C6l9omnvL._SY300_.jpg"/>
+          </label>
+
+          <label>
+            <img src="http://ecx.images-amazon.com/images/I/51NNW9ZbHaL._SY300_.jpg">
+            <input type="radio" name="player2Avatar" class="player-2-avatar" value="http://ecx.images-amazon.com/images/I/51NNW9ZbHaL._SY300_.jpg"/>
+          </label>
+
+        </div>
+
+        <input type='submit' value='GO!'>
+      </form>
+    </div>
+    <div class='board'>
+      <div class='clearfix'>
+        <p class='player-1-name'></p>
+        <img class='player player-1'>
+      </div>
+      <br>
+      <div class='clearfix'>
+        <p class='player-2-name'></p>
+        <img class='player player-2'>
+      </div>
+    </div>
+	</body>
+</html>
